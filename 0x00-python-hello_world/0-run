@@ -1,3 +1,2 @@
 #!/bin/bash
-# runs a Python script saved in the environment variable $PYFILE
 python3 "$PYFILE"
