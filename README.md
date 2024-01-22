@@ -1,2 +1,1 @@
-# alx-higher_level_programming
-practice makes perfect
+0x01. Python - if/else, loops, functions
