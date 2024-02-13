@@ -55,7 +55,7 @@ class Square:
         """
         Sets the position.
         """
-        if not isinstance(value, tupple) or len(value) != 2:
+        if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif not all(isinstance(x, int) and x >= 0 for x in value):
             raise TypeError("position must be a tuple of 2 positive integers")
