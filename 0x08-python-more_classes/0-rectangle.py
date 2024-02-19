@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Defines a square class"""
+"""Defines a rectangle class."""
 class Rectangle:
-    """Represents a square."""
+    """Represents a rectangle."""
     pass
