@@ -2,17 +2,20 @@
 """
 Tests cases for the add_integer function.
 """
+
+
 def add_integer(a, b=98):
     """
     Add two integers
 
     Parameter:
     - a (int): The first integer to be added.
-    - b (int, optional): The second integer to be added. Defaults to 98 if not provided.
+    - b (int, optional): The second integer to be added.
+    Defaults to 98 if not provided.
 
     Returns:
     int: The sum of the two integers, `a` and `b`.
-    
+
     >>> add_integer = __import__('0-add_integer').add_integer
     Examples:
     >>> add_integer(1, 2)
@@ -27,10 +30,10 @@ def add_integer(a, b=98):
     >>> add_integer(100.3, -2)
     98
 
-    >>> add_integer(4.5, 5.5)  # This should fail since the function does not handle floats properly
+    >>> add_integer(4.5, 5.5)
     9
 
-    >>> add_integer(4, "School")  # This should fail since the second parameter is not an integer
+    >>> add_integer(4, "School")
     Traceback (most recent call last):
             ...
     TypeError: b must be an integer
