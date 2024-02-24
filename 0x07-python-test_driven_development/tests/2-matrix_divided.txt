@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+"""
+Tests cases for the matrix_divided.
+"""
+def matrix_divided(matrix, div):
+    """
+    Divide all elements of a matrix by a divisor.
+
+    Parameters:
+    - matrix (list of lists): The matrix to be divided.
+    - div (int or float): The divisor to divide each element of the matrix by
+
+    Returns:
+    list of lists: A new matrix with elements divided by the divisor.
+
+    Raises:
+    TypeError: If the matrix is not a list of lists or if the divisor is not an int or float.
+    ValueError: If the rows of the matrix are not of the same size.
+    ZeroDivisionError: If the divisor is 0.
+    ""mples:
+            # Passing Case
+                    >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+                            >>> div = 2
+                                    >>> matrix_divided(matrix, div)
+                                            [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
+
+                                                    # Failing Case: Zero Division
+                                                            >>> matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+                                                                    >>> div = 0
+                                                                            >>> matrix_divided(matrix, div)
+                                                                                    Traceback (most recent call last):
+                                                                                        ...
+                                                                                                            ZeroDivisionError: division by zero
+
+                                                                                                                    # Failing Case: Invalid Matrix
+                                                                                                                            >>> matrix = [1, 2, 3, 4, 5]
+                                                                                                                                    >>> div = 2
+                                                                                                                                            >>> matrix_divided(matrix, div)
+                                                                                                                                                    Traceback (most recent call last):
+                                                                                                                                                        ...
+                                                                                                                                                                            TypeError: Matrix must be a list of lists
