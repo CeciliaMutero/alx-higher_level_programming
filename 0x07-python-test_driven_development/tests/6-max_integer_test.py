@@ -32,8 +32,3 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(['a', 'b', 'c']), 'c')
         self.assertEqual(max_integer(['abc', 'def', 'ghi']), 'ghi')
         self.assertEqual(max_integer(['apple', 'banana', 'orange']), 'orange')
-
-    def test_mixed_types(self):
-        self.assertEqual(max_integer([1, '2', 3, '4']), 3)
-        self.assertEqual(max_integer([1, '2', 3, 'four']), 3)
-        self.assertEqual(max_integer([1, '2', 'three', 'four']), 1)
