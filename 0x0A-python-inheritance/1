@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+"""
+Test case for lookup function.
+"""
+
+
+def lookup(obj):
+    """
+    Retrieve a list of available methods and
+    attributes associated with the given object.
+
+    Parameters:
+    obj (object): retrieve available methods and attributes.
+
+    Returns:
+    list of str: A list containing the names of available
+    methods and attributes associated with the given object.
+
+    >>> lookup = __import__('0-lookup').lookup
+
+    Examples:
+    >>> lookup({'a': 1, 'b': 2}, 'a')
+    1
+    
+    >>> lookup({'a': 1, 'b': 2}, 'c')
+    Traceback (most recent call last):
+            ...
+    KeyError: 'c'
+    
+    >>> lookup([1, 2, 3], 1)
+    2
+    
+    >>> lookup([1, 2, 3], 4)
+    Traceback (most recent call last):
+            ...
+    IndexError: list index out of range
+    """
+    return obj[key]
