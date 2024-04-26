@@ -5,11 +5,7 @@ if (isNaN(size)) {
 } else {
   if (size > 0) {
     for (let y = 0; y < size; y++) {
-      let output = '';
-      for (let i = 0; i < size; i++) {
-        output += 'X';
-      }
-      console.log(output);
+      console.log('X'.repeat(size));
     }
   }
 }
