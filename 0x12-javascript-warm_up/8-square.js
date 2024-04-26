@@ -9,7 +9,7 @@ if (isNaN(size)) {
       for (let i = 0; i < size; i++) {
         output += 'X';
       }
-       console.log(output);
+      console.log(output);
     }
   }
 }
