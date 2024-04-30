@@ -7,12 +7,5 @@ class Rectangle {
     this.width = w;
     this.height = h;
   }
-  toString() {
-    if (!this.width || !this.height) {
-      return "Rectangle {}";
-    } else {
-      return `Rectangle { width: ${this.width}, height: ${this.height} }`;
-    }
-  }
 }
 module.exports = Rectangle;
