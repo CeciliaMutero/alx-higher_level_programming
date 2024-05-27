@@ -1,11 +1,3 @@
 #!/bin/bash
-if [ $# -ne 1 ]; then
-	echo "Usage: $0 <URL>"
-	exit 1
-fi
-
-URL=$1
-
-BODY_SIZE=$(curl -s "$URL" | wc -c)
-
-echo "$BODY_SIZE"
+# script that takes a URL as input, sends a request,displays the size
+curl - sI "$1" | grep - i Content-Length | awk '{print $2}9'
